@@ -181,7 +181,7 @@ class _PdfViewPageState extends State<PdfViewPage> {
                   },
                 )
               : Offstage(),
-          _currentPage < _totalPages
+          _currentPage+1 < _totalPages
               ? FloatingActionButton.extended(
                   backgroundColor: Colors.green,
                   label: Text("Go to ${_currentPage + 1}"),
